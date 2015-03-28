@@ -1,0 +1,44 @@
+
+<h1>
+  			Hello! I am Júlia
+  		
+  		</h1>
+  		<div>
+  			<h2>
+  			Welcome to Rails Girls!
+  			</h2>
+	
+  		</div>
+  		<div>
+  			<h2>
+  			We are learning a lot
+  			</h2>
+  				
+  		</div>	
+  		<div>
+  			<h2>
+  			and having good time
+  			</h2>	
+  		</div>	
+  		<ul>
+  			<li> 
+  			<a href="http://www.getquipu.com">Get Quipu NOW!</a>
+  				<img src="https://pbs.twimg.com/profile_images/532934912890789888/6avwiNea.png" style="width: 50px"/>
+  			</li>
+  			<li> 
+  			<a href="http://www.hihayk.com">Hi, Hayk!</a>
+  				<img src="http://www.awwwards.com/awards/images/2013/11/hihayk.jpg" style="width: 50px"/>
+  			</li>
+  			<li> 
+  			<a href="http://www.bellonch.com">Albert Bellonch</a>
+  				<img src="https://pbs.twimg.com/profile_images/1540879686/albert.png" style="width: 50px"/>
+  			</li>
+  		</ul>	
+	<% @websites = [
+			["http://www.getquipu.com", "Get Quipu NOW!"],
+			["http://www.bellonch", "xxx"]
+		] %>
+
+	 <% for url, name in @websites %>
+	 <li> <a href=<%= url %>><%= name %></a> </li>
+	 <% end %>
